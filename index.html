@@ -105,25 +105,12 @@
     <p>Decrypting security protocols<span class="loading-dots"> </span></p>
     <p>Injecting code<span class="loading-dots"> </span></p>
     <p>Downloading classified data<span class="loading-dots"> </span></p>
-    <!-- <div class="progress-bar">
-      <div class="progress-fill" id="progressFill"></div>
-    </div>
-    <div class="progress-text" id="progressText">% downloading user data</div> -->
   </div>
   <footer>
     <p>YANNECK MOELLER, KINDERHEIMSTRASSE 35, 45770 MARL</p>
   </footer>
 
   <script>
-    function updateProgress() {
-      const progress = document.getElementById('progressFill');
-      const progressText = document.getElementById('progressText');
-      const randomProgress = Math.floor(Math.random() * 100) + 1;
-      progress.style.width = randomProgress + '%';
-      progressText.textContent = randomProgress + '% downloading user data';
-    }
-    setInterval(updateProgress, 420);
-
     function handleDivClick() {
       window.open("https://bit.ly/x-neo", "_blank");
     }
