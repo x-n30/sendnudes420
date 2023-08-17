@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://images3.alphacoders.com/198/198979.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Courier New", monospace;
+    color: limegreen;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+  }
+  .ascii-text {
+    text-align: center;
+    color: limegreen;
+    white-space: pre;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .hack-container {
+    border: 5px solid limegreen;
+    padding: 20px;
+    background-color: #00000080;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  p {
+    text-align: left;
+  }
+  p:hover {
+    color: white;
+    font-weight: bold;
+  }
+  b {
+    text-align: left;
+  }
+  b:hover {
+    color: red;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .loading-dots:after {
+    content: "";
+    display: inline-block;
+    animation: loading 5s infinite;
+  }
+  .progress-bar {
+    margin-top: 20px;
+    width: 100%;
+    height: 10px;
+    border: 1px solid limegreen;
+    position: relative;
+  }
+  .progress-fill {
+    width: 0;
+    height: 100%;
+    background-color: limegreen;
+  }
+  .progress-text {
+    margin-top: 5px;
+    font-size: 1.5rem;
+  }
+  @keyframes loading {
+    0% {
+      content: "";
+    }
+    25% {
+      content: ".";
+    }
+    50% {
+      content: "..";
+    }
+    75% {
+      content: "...";
+    }
+    100% {
+      content: "";
+    }
+  }
+</style>
+</head>
+<body ng-controller="appCtrl" oncontextmenu="return false" onclick="handleDivClick()" style="cursor:progress" title="sendnudes420.de is now offline - we have deleted all data from the server @x-neo">
+  <div class="hack-container">
+    <div class="ascii-text"><b>
+ _    _  _____ _  _______     ______     __   _   _ ______ ____  
+| |  | |/ ____| |/ /  __ \   |  _ \ \   / /  | \ | |  ____/ __ \ 
+| |__| | |    | ' /| |  | |  | |_) \ \_/ /   |  \| | |__ | |  | |
+|  __  | |    |  < | |  | |  |  _ < \   /    | . ` |  __|| |  | |
+| |  | | |____| . \| |__| |  | |_) | | |     | |\  | |___| |__| |
+|_|  |_|\_____|_|\_\_____/   |____/  |_|     |_| \_|______\____/ 
+    </b></div>
+    <p>Accessing mainframe<span class="loading-dots"> </span></p>
+    <p>Decrypting security protocols<span class="loading-dots"> </span></p>
+    <p>Injecting code<span class="loading-dots"> </span></p>
+    <p>Downloading classified data<span class="loading-dots"> </span></p>
+    <!-- <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <div class="progress-text" id="progressText">% downloading user data</div> -->
+  </div>
+  <footer>
+    <p>YANNECK MOELLER, KINDERHEIMSTRASSE 35, 45770 MARL</p>
+  </footer>
+
+  <script>
+    function updateProgress() {
+      const progress = document.getElementById('progressFill');
+      const progressText = document.getElementById('progressText');
+      const randomProgress = Math.floor(Math.random() * 100) + 1;
+      progress.style.width = randomProgress + '%';
+      progressText.textContent = randomProgress + '% downloading user data';
+    }
+    setInterval(updateProgress, 420);
+
+    function handleDivClick() {
+      window.open("https://bit.ly/x-neo", "_blank");
+    }
+  </script>
+</body>
+</html>
